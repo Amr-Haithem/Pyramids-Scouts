@@ -1,0 +1,39 @@
+.container{
+    animation-name: leftToRight;
+    animation-duration: 3s;
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: forwards;*/
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes leftToRight{
+    from{height:0px;}
+    to{height:625px; }
+    /*100%{ width:100%;}*/
+
+}
+
+
+.subscribe_button:hover{
+    animation-name: backgroundBlend;
+    animation-direction: alternate;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+
+.orderNowButton:hover{
+    animation-name: backgroundBlend2;
+    animation-direction: alternate;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes backgroundBlend{
+    from{background-color: rgba(0, 132, 255);}
+    to{background-color: rgba(9, 230, 138, 0.753);}
+}
+@keyframes backgroundBlend2{
+    from{background-color: rgb(255, 255, 255);color: white;}
+    to{background-color: rgba(0, 132, 255);color: white;}
+}
