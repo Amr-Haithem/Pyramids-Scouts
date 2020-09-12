@@ -1,6 +1,11 @@
 @import url('animations.css');
 @import url('./dispay.css');
 
+/*importing fonts*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+/*end importing fonts*/
+
 
 body{
     margin: 0;
@@ -9,7 +14,7 @@ body{
 }
 
 
-
+/*container 1*/
 .container{
     background-image: url('./imgs/pyramids.jpg');
     background-size: 1370px 770px;
@@ -19,6 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    position: relative;
 
 }
 .nav_items{
@@ -100,3 +106,73 @@ body{
     cursor: pointer;
     
 }
+
+/*container 2*/
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    height: 577px;
+    width: 100%;
+    position: sticky;
+}
+
+.containerOfTheColoredDivs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    
+}
+.red_div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FF5F5F;
+    justify-content: center;
+    align-content: center;
+    color: white;
+
+}
+
+.orange_div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFE600;
+    justify-content: center;
+    align-content: center;
+
+    
+
+
+}
+
+.orange_div p,.red_div p{
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    width: 60%;
+    text-align: center;
+    font-size: 31px;
+    line-height: 40px;
+    letter-spacing: 2px;
+
+
+
+
+
+}
+
+.labtop_container{
+    width: 40%;
+    height: 100%;
+    background-image: url('./imgs/orange\ background\ with\ laptop.jpg');
+    background-size: 150% 700px;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
